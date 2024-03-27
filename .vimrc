@@ -50,3 +50,22 @@ syntax on
 filetype plugin on
 colorscheme molokai
 highlight ColorColumn ctermbg=4 guibg=DarkBlue
+
+" User code (the above courtesy Radhika Ghoshal)
+set backspace=indent,eol,start
+inoremap jk <esc>
+
+" YCM shortcuts 
+nnoremap <leader>gt :YcmCompleter GoTo<CR>
+nnoremap <leader>in :vs \| YcmCompleter GoToInclude<CR>
+nnoremap <leader>df :vs \| YcmCompleter GoToDefinition<CR>
+nnoremap <leader>dl :vs \| YcmCompleter GoToDeclaration<CR>
+nnoremap <leader>im :vs \| YcmCompleter GoToImplementation<CR>
+
+set statusline=[eng-grid]\ %<%f%m\ \[%{fugitive#statusline()}\]\ %=\ Line:%l\/%L\ Column:%c%V\ %P
+set laststatus=2
+
+nnoremap j gj
+nnoremap k gk
+set foldmethod=syntax
+set hlsearch

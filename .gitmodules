@@ -5,5 +5,5 @@
     path = bundle/YouCompleteMe
     url = https://github.com/ycm-core/YouCompleteMe.git
 [submodule "pack/tpope/start/fugitive"]
-    path = pack/tpope/start/fugitive
-    url = https://tpope.io/vim/fugitive.git
+	path = pack/tpope/start/fugitive
+	url = https://tpope.io/vim/fugitive.git
